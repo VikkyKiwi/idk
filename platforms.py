@@ -8,6 +8,6 @@ class Platforms(pygame.sprite.Sprite):
     self.image.blit(pygame.image.load(img_path).convert(), (0,0), (0, 0, width, height))
     self.image.set_colorkey((0,0,0))
     self.rect=self.image.get_rect()
-    self.rect.ce = pos
+    self.rect.center = pos
   def scroll(self,change):
     self.rect.top+=change
